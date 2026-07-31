@@ -93,3 +93,8 @@
     padding: 0 10px 10px;
   }
 }
+
+
+.screen-card + .screen-card {
+  margin-top: 34px;
+}
