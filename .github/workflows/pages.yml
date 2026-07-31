@@ -2,10 +2,12 @@ name: Deploy portfolio site
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
     paths:
       - "site/**"
       - ".github/workflows/pages.yml"
+
   workflow_dispatch:
 
 permissions:
@@ -19,16 +21,25 @@ concurrency:
 
 jobs:
   deploy:
+    name: Deploy GitHub Pages
+    runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v4
         with:
           path: site
-      - name: Deploy to GitHub Pages
+
+      - name: Deploy site
         id: deployment
         uses: actions/deploy-pages@v4
