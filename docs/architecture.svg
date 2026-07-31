@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+<title id="title">Retail Analytics Platform architecture</title><desc id="desc">Five-layer architecture from data sources to platform operations.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#07101f"/><stop offset="1" stop-color="#10284c"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-opacity=".25"/></filter></defs>
+<rect width="1200" height="640" rx="28" fill="url(#bg)"/>
+<text x="600" y="58" text-anchor="middle" fill="#fff" font-size="30" font-family="Arial" font-weight="700">Retail Analytics Platform — Logical Architecture</text>
+<g font-family="Arial" text-anchor="middle" filter="url(#shadow)">
+<rect x="90" y="105" width="1020" height="76" rx="15" fill="#17345f" stroke="#4f8cff"/><text x="600" y="137" fill="#fff" font-size="22" font-weight="700">Data Sources</text><text x="600" y="163" fill="#b9cae5" font-size="16">CSV · Excel · MySQL · Synthetic demo data</text>
+<rect x="90" y="205" width="1020" height="76" rx="15" fill="#15304f" stroke="#4f8cff"/><text x="600" y="237" fill="#fff" font-size="22" font-weight="700">Schema, Quality & Governance</text><text x="600" y="263" fill="#b9cae5" font-size="16">Canonical mapping · validation · catalog · lineage · versioning</text>
+<rect x="90" y="305" width="1020" height="76" rx="15" fill="#142a45" stroke="#4f8cff"/><text x="600" y="337" fill="#fff" font-size="22" font-weight="700">Analytics Services</text><text x="600" y="363" fill="#b9cae5" font-size="16">KPI · RFM · Customer 360 · product/store analytics · forecast · ML</text>
+<rect x="90" y="405" width="1020" height="76" rx="15" fill="#11243b" stroke="#4f8cff"/><text x="600" y="437" fill="#fff" font-size="22" font-weight="700">Enterprise User Experience</text><text x="600" y="463" fill="#b9cae5" font-size="16">Dashboards · drill-downs · alerts · exports · reports</text>
+<rect x="90" y="505" width="1020" height="76" rx="15" fill="#0f1f33" stroke="#34d399"/><text x="600" y="537" fill="#fff" font-size="22" font-weight="700">Platform Core & Operations</text><text x="600" y="563" fill="#b9cae5" font-size="16">Plugins · service container · event bus · background jobs · runtime validation</text>
+</g>
+<g stroke="#79a8ff" stroke-width="3" fill="none"><path d="M600 181v24"/><path d="M600 281v24"/><path d="M600 381v24"/><path d="M600 481v24"/></g>
+</svg>

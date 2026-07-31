@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Retail Analytics Platform — executive analytics, customer intelligence, forecasting, governance and extensible platform operations.">
+  <title>Retail Analytics Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top">RAP<span>1.0</span></a>
+  <nav>
+    <a href="#capabilities">Capabilities</a>
+    <a href="#architecture">Architecture</a>
+    <a href="#quality">Quality</a>
+    <a href="#demo">Demo</a>
+    <a class="button small" href="https://github.com/alexmam80/retail-analytics-platform-portfolio">GitHub</a>
+  </nav>
+</header>
+<main id="top">
+  <section class="hero">
+    <div class="eyebrow">ENTERPRISE RETAIL ANALYTICS · v1.0.0</div>
+    <h1>Turn retail data into <em>measurable decisions.</em></h1>
+    <p>A modular analytics platform for executive intelligence, customer segmentation, forecasting, governance, extensibility and runtime operations.</p>
+    <div class="actions">
+      <a class="button" href="#capabilities">Explore the platform</a>
+      <a class="button ghost" href="#demo">View demo route</a>
+    </div>
+    <div class="metrics">
+      <div><strong>6012</strong><span>synthetic demo rows</span></div>
+      <div><strong>2000</strong><span>demo transactions</span></div>
+      <div><strong>3 versions</strong><span>Python CI matrix</span></div>
+      <div><strong>Docker</strong><span>validated build</span></div>
+    </div>
+  </section>
+
+  <section id="capabilities" class="section">
+    <div class="section-title"><span>01</span><div><h2>Product capabilities</h2><p>A complete workflow from data ingestion to decision support.</p></div></div>
+    <div class="grid">
+      <article><b>Executive Intelligence</b><p>KPIs, trends, alerts, decision summaries and business scenarios.</p></article>
+      <article><b>Customer Analytics</b><p>RFM, Customer 360, cohorts, CLV and actionable segments.</p></article>
+      <article><b>Product & Store Intelligence</b><p>Portfolio analysis, drill-downs and comparative performance.</p></article>
+      <article><b>Forecast & ML Lifecycle</b><p>Model comparison, experiments, forecasting and governance.</p></article>
+      <article><b>Data Governance</b><p>Quality controls, catalog, semantic mapping, versioning and lineage.</p></article>
+      <article><b>Platform Operations</b><p>Plugins, event bus, background jobs, diagnostics and release validation.</p></article>
+    </div>
+  </section>
+
+  <section id="architecture" class="section split">
+    <div>
+      <div class="eyebrow">MODULAR ARCHITECTURE</div>
+      <h2>Analytics services separated from UI and platform operations.</h2>
+      <p>The product combines a Streamlit shell, reusable UI components, domain services, an extensible platform core and automated validation tooling.</p>
+      <ul>
+        <li>Canonical schema and quality layer</li>
+        <li>Independent customer, product, store and forecast services</li>
+        <li>Plugin registry, service container and event bus</li>
+        <li>Background jobs and runtime observability</li>
+      </ul>
+    </div>
+    <div class="diagram">
+      <div>Data Sources<small>CSV · Excel · MySQL · Demo</small></div><i>↓</i>
+      <div>Schema & Governance<small>mapping · quality · catalog · lineage</small></div><i>↓</i>
+      <div>Analytics Services<small>RFM · KPI · forecast · ML</small></div><i>↓</i>
+      <div>Enterprise UI & Platform Core<small>dashboards · plugins · jobs · events</small></div>
+    </div>
+  </section>
+
+  <section id="quality" class="section">
+    <div class="section-title"><span>02</span><div><h2>Engineering quality</h2><p>The stable release is validated across multiple runtimes and deployment paths.</p></div></div>
+    <div class="quality-grid">
+      <div><strong>Python 3.10</strong><span>Tests passed</span></div>
+      <div><strong>Python 3.11</strong><span>Tests passed</span></div>
+      <div><strong>Python 3.12</strong><span>Tests passed</span></div>
+      <div><strong>Docker</strong><span>Build passed</span></div>
+      <div><strong>Demo integrity</strong><span>Checksums passed</span></div>
+      <div><strong>Runtime contracts</strong><span>Imports validated</span></div>
+    </div>
+  </section>
+
+  <section id="demo" class="section">
+    <div class="section-title"><span>03</span><div><h2>Seven-step demonstration</h2><p>A focused route for interviews, technical reviews and client presentations.</p></div></div>
+    <div class="timeline">
+      <div><b>1</b><span>Load synthetic retail data</span></div>
+      <div><b>2</b><span>Validate schema and quality</span></div>
+      <div><b>3</b><span>Review executive KPIs</span></div>
+      <div><b>4</b><span>Explore Customer 360</span></div>
+      <div><b>5</b><span>Show ETL and governance</span></div>
+      <div><b>6</b><span>Compare forecasts and models</span></div>
+      <div><b>7</b><span>Present plugins and operations</span></div>
+    </div>
+  </section>
+
+  <section class="section launch">
+    <div>
+      <div class="eyebrow">PRIVATE SOURCE · PUBLIC PORTFOLIO</div>
+      <h2>Product visibility without exposing proprietary code.</h2>
+      <p>The complete implementation remains private. This repository publishes only the product story, architecture, quality evidence and demonstration materials.</p>
+    </div>
+    <a class="button" href="https://github.com/alexmam80">Contact via GitHub</a>
+  </section>
+</main>
+<footer><span>Retail Analytics Platform v1.0.0</span><span>Python · Streamlit · pandas · scikit-learn · Plotly</span></footer>
+</body>
+</html>
